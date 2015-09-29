@@ -3,7 +3,9 @@
 	<meta charset="UTF-8">
 	<title>Formulário PHP </title>
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1"
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type='text/javascript' src='cep.js'></script>
 </head>
 <body>
 	<form class="pure-form pure-form-stacked" action="verifica.php" method="post">
@@ -12,8 +14,8 @@
 
         <div class="pure-g">
             <div class="pure-u-1 pure-u-md-1-3">
-                <label for="first-name">Nome</label>
-                <input name="nome" id="first-name" class="pure-u-23-24" type="text">
+                <label for="nome">Nome</label>
+                <input name="nome" id="nome" class="pure-u-23-24" type="text">
             </div>
 
             <div class="pure-u-1 pure-u-md-1-3">
@@ -22,17 +24,33 @@
             </div>
 
             <div class="pure-u-1 pure-u-md-1-3">
-                <label for="city">Cidade</label>
-                <input name="cidade" id="city" class="pure-u-23-24" type="text">
+                <label for="cep">CEP</label>
+                <input name="cep" id="cep" class="pure-u-23-24" type="text">
             </div>
 
             <div class="pure-u-1 pure-u-md-1-3">
-                <label for="state">Estado</label>
-                <select name="estado" id="state" class="pure-input-1-2">
-                    <option>SP</option>
-                    <option>MG</option>
-                    <option>RJ</option>
-                </select>
+                <label for="endereco">Endereço</label>
+                <input name="endereco" id="endereco" class="pure-u-23-24" type="text">
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="bairro">Bairro</label>
+                <input name="bairro" id="bairro" class="pure-u-23-24" type="text">
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="cidade">Cidade</label>
+                <input name="cidade" id="cidade" class="pure-u-23-24" type="text">
+            </div>
+
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="uf">Estado</label>
+                <input name="uf" id="uf" class="pure-u-23-24" type="text">
+            </div>
+            
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="numero">Número</label>
+                <input name="numero" id="numero" class="pure-u-23-24" type="text">
             </div>
         </div>
 
