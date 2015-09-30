@@ -1,6 +1,12 @@
 <html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário PHP </title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
-
+<a class="pure-button" href="http://www.mundosa.com.br/sites/formulario">Voltar</a><br>
 <?php
 $nome = $_POST["nome"];
 $email = $_POST["email"];

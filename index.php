@@ -58,5 +58,6 @@
     </fieldset>
 </form>
 <!-- http://www.concatenar.com.br/php/inserindo-dados-de-formulario-atraves-do-php-em-um-banco-de-dados-mysql.html -->
+<!-- http://www.rafaelwendel.com/2012/08/preenchimento-automatico-do-endereco-a-partir-do-cep/ -->
 </body>
 </html>
