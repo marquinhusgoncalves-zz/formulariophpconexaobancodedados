@@ -1,3 +1,11 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário PHP </title>
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
 <?php
 
 include "conecta_mysql.inc";
@@ -13,20 +21,12 @@ $numero = $_POST["numero"];
 
 $sql = "INSERT INTO cadastro VALUES";
 $sql .= "('$nome','$email', '$cep', '$endereco', '$bairro', '$cidade', '$uf', '$numero')";
-$resultado = mysql_query($sql);
-echo " Usuário incluído com sucesso!";
+$resultado = mysqli_query($conexao, $sql);
+echo 'Usuário incluído com sucesso! <br><br><a class="pure-button" href="index.php">Voltar</a>';
 
-mysql_close($conexao);
+mysqli_close($conexao);
 
 ?>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Formulário PHP </title>
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-	<a class="pure-button" href="http://www.mundosa.com.br/sites/formulario">Voltar</a>
+
 </body>
 </html>
